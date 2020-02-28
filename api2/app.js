@@ -8,7 +8,7 @@ fetch('https://api.magicthegathering.io/v1/cards')
     data.cards.forEach(card => {
         console.log(card) 
         let cardDiv = document.createElement('div')
-        cardDiv.innerHTML = '<div class="name">' + card.name + '</div> <div class="manaCost">' + card.manaCost + '</div>'
+        cardDiv.innerHTML = '<div class="name">' + card.name + '</div> <div class="manaCost">' + card.manaCost + '</div> <div class="cmc">' + card.cmc + '</div>'
         container.append(cardDiv)
     });
  });
